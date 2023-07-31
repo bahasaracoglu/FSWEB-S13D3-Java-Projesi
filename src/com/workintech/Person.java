@@ -32,6 +32,13 @@ public class Person {
 
     }
 
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Name: "+firstname+ " Lastname: "+ lastname);
+        return sb.toString();
+    }
+
     public String getFirstName() {
         return firstname;
     }
