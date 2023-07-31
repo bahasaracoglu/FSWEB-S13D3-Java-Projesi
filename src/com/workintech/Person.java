@@ -1,13 +1,15 @@
+package com.workintech;
+
 import java.util.logging.StreamHandler;
 
 public class Person {
-    String firstname;
-    String lastname;
-    int age;
-    String gender;
-    String nationality;
-    String job;
-    String[] hobbies;
+    private String firstname;
+    private String lastname;
+    private int age;
+    private String gender;
+    private String nationality;
+    private String job;
+    private String[] hobbies;
 
     public Person(String firstname, String lastname, int age) {
         this.firstname = firstname;
@@ -28,6 +30,23 @@ public class Person {
         this.job = job;
         this.hobbies = hobbies;
 
+    }
+
+    public String getFirstName() {
+        return firstname;
+    }
+
+    public String getLastName() {
+        return lastname;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public boolean isTeen() {
+
+        return age>=13&&age<=19?true:false;
     }
 
 
